@@ -36,7 +36,7 @@ app.post('/', async (req, res) => {
     });
 
     res.status(200).send({
-      bot: response.data.choices[0].text
+      bot: response.data.choices[0].text + " Add more detail to these text. Can you tell them why?"
     });
 
   } catch (error) {
